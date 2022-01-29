@@ -1,0 +1,24 @@
+.animal__block {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 435px;
+  margin-bottom: 30px;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+
+}
+
+.animal__content {
+  display: flex;
+  height: 165px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.animals__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+
+}

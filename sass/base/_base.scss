@@ -1,0 +1,29 @@
+* {
+  margin: 0 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  @extend %font-prim;
+  @include font($height: 2.6rem, $size: 1.6rem);
+  background-color: $color-background;
+  padding-bottom: 172px;
+}
+
+h1 {
+  @include font($height: 4.55rem, $size: 3.5rem);
+  color: $color-title;
+  letter-spacing: 0.06em;
+  @include media-mobile {
+    @include font($height: 3.25rem, $size: 2.5rem);
+  }
+}
+
+h2 {
+  @include font($height: 2.22rem, $size: 2rem);
+  color: $color_animal_name;
+  letter-spacing: 0.06em;
+}

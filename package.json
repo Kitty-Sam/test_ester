@@ -1,0 +1,12 @@
+{
+  "name": "test_ester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "style": "sass sass/index.scss sass/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

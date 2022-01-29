@@ -1,0 +1,11 @@
+.layout-4-column {
+  @include columns($width: 270px);
+
+  @include media-tablet {
+    max-width: 580px;
+    justify-content: space-between;
+  }
+  @include media-mobile {
+    max-width: 270px;
+  }
+}

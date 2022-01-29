@@ -1,0 +1,16 @@
+.button {
+  @extend %font-prim;
+  @include font($size: 1.7rem, $height: 2.21rem);
+  width: 187px;
+  height: 52px;
+  border-radius: 100px;
+  border: 2px solid $color-button_border;
+  padding: 13px 42px;
+  cursor: pointer;
+  color: $color-button_title;
+  letter-spacing: 0.06em;
+  background-color: transparent;
+
+
+
+}
