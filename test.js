@@ -1,9 +1,9 @@
 // task#1
-function createSecretHolder(secret){
+ function createSecretHolder(secret){
     return {
 
     }
-}
+ }
 
 //task#2
 let array = [7, 6, 15, 8]
