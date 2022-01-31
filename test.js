@@ -1,52 +1,36 @@
 // task#1
-function CreateSecretHolder(secret) {
-    this.secret = secret
-}
+ function createSecretHolder(secret){
+    return {
 
-CreateSecretHolder.prototype = {
-    getSecret : function () {
-        return this.secret
-    },
-    setSecret: function (secret) {
-        this.secret = secret
+    }
+ }
+
+//task#2
+let array = [7, 6, 15, 8]
+
+const compareFunction = function (a, b) {
+    let bitA = a.toString(2).replace(/0/g, '').length;
+    let bitB = b.toString(2).replace(/0/g, '').length
+    if (bitA === bitB) {
+        return a - b
+    } else {
+        return bitA - bitB
     }
 }
 
-let secretAgain = new CreateSecretHolder(5)
-
-// console.log(secretAgain.setSecret(2))
-// console.log(secretAgain.getSecret())
-
-
-//task#2
-let array = [7,6,15,8]
-
-const compareFunction = function (a,b) {
-    let bitA = a.toString(2).replace(/0/g,'').length;
-    let bitB = b.toString(2).replace(/0/g,'').length
-    if(bitA === bitB) {
-        return a-b
-    } else {
-    return bitA - bitB
-}}
-
 let arraySort = array.sort(compareFunction)
-console.log(arraySort)
+// console.log(arraySort)
 
 
 //task#3
 
 let languages = {"Java": 10, "Ruby": 80, "Python": 65}    //-->  ["Ruby", "Python"]
-let languagesSecondGroup =  {"Hindi": 60, "Dutch" : 93, "Greek": 71}  //-->  ["Dutch", "Greek", "Hindi"]
+let languagesSecondGroup = {"Hindi": 60, "Dutch": 93, "Greek": 71}  //-->  ["Dutch", "Greek", "Hindi"]
 let languagesThreeGroup = {"C++": 50, "ASM": 10, "Haskell": 20} // []
 
-function getKeyByValue(object, value) {
-    return Object.keys(object).filter(key => object[key] >= value);
-}
+let sortObj = Object.entries(languages).sort((a, b) => b[1] - a[1]).filter(el => el[1] >=60).map((el) => el[0])
 
-console.log(getKeyByValue(languagesThreeGroup, 60))
-// console.log(values)
-// console.log(keys)
+console.log(sortObj)
 
 
 //task#4 returns all values
@@ -57,8 +41,10 @@ console.log(getKeyByValue(languagesThreeGroup, 60))
     }, 1000);
 }*/
 
-for (let i = 0; i < 5; i++) {
-    setTimeout(() => {
-        console.log(i);
-    }, 1000);
+for (var i = 0; i <= 5; i++) {
+    (function (ind) {
+        setTimeout(function () {
+            console.log(ind);
+        }, 1000);
+    })(i);
 }
